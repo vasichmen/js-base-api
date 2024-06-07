@@ -1,19 +1,18 @@
 import {defineConfig} from 'vite';
-import checker from 'vite-plugin-checker'
 
 export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.js',
-      name: 'index',
-      fileName: 'index',
+      formats: ['cjs', 'umd', 'iife'],
+      name: "index",
+      fileName:"index"
     },
     rollupOptions: {
       output: {
-        format: "iife",
+        format: "cjs",
       },
     },
   },
-  plugins: [checker({typescript: false}),],
 });
 

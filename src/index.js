@@ -3,4 +3,4 @@ import RequestBuilder from "./RequestBuilder.js";
 import Response from "./Response.js";
 import Request from "./Request.js";
 
-export default {BaseClient,RequestBuilder,Request,Response}
+export default {BaseClient, RequestBuilder, Request, Response}
